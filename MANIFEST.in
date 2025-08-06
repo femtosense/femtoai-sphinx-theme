@@ -1,1 +1,1 @@
-recursive-include femtoai_sphinx_theme *.css *.svg *.html *.conf *.toml
+recursive-include femtoai_sphinx_theme *.css *.svg *.html *.conf *.toml *.ico

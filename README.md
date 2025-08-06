@@ -60,7 +60,12 @@ open _build/html/index.html
 
 ### Install via Git
 
-In your target Sphinx project:
+In your target Sphinx project, add the following line to the `requirements.txt`:
+```
+git+https://github.com/femtosense/femtoai-sphinx-theme.git
+```
+
+or to install directly:
 ```bash
 pip install git+https://github.com/femtosense/femtoai-sphinx-theme.git
 ```
