@@ -1,0 +1,7 @@
+[theme]
+name = "femtoai_sphinx_theme"
+inherit = "sphinx_rtd_theme"
+static_paths = ["static"]
+
+[options]
+css = ["css/custom.css"]

@@ -1,0 +1,126 @@
+/* Set sidebar background color */
+.wy-side-nav-search,
+.wy-nav-top {
+  background-color: #501ac6; /* Indigo */
+}
+
+/* Remove the home icon but keep text */
+.wy-side-nav-search a.icon-home::before {
+  content: none !important;
+}
+.wy-side-nav-search a.icon-home {
+  font-size: 36px !important;
+}
+
+.wy-side-nav-search input[type="text"] {
+  border-color: #1f0c51;
+}
+
+/* Sidebar section headings */
+.wy-menu-vertical p.caption,
+.wy-menu-vertical p.caption span.caption-text {
+  color: white !important; /* Indigo purple */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Sidebar logo fixed at bottom */
+.sidebar-logo {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 300px; /* Adjust to match your sidebar width */
+  text-align: left;
+  padding: 8px 22px;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.sidebar-logo img {
+  max-width: 120px;
+  height: auto;
+}
+.sidebar-logo:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle highlight */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+/* Hide on mobile to avoid overlap */
+@media screen and (max-width: 768px) {
+  .sidebar-logo {
+    display: none;
+  }
+}
+
+.wy-nav-side {
+  padding-bottom: 4em;
+}
+
+/* Hide sidebar version selector */
+.switch-menu {
+  display: none !important;
+}
+
+/* Return to developer portal button */
+.return-button {
+  margin-top: -16px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.btn-return {
+  display: inline-block;
+  background-color: #501ac6; /* Brand purple */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px; /* Smaller font */
+  white-space: nowrap; /* Prevents text wrapping */
+  transition: background-color 0.2s ease;
+}
+.btn-return:visited {
+  color: white;
+}
+.btn-return:hover {
+  background-color: #7a3dff;
+}
+
+/* Body text */
+body,
+.wy-nav-content {
+  font-family: "DM Sans", sans-serif;
+  color: #1f0c51; /* Midnight Violet for body text */
+}
+
+/* Only change main content links, not sidebar */
+.wy-nav-content a,
+.wy-nav-content a:visited {
+  color: #501ac6; /* CI purple */
+}
+
+.wy-nav-content a:hover,
+.wy-nav-content a:focus {
+  color: #7a3dff; /* lighter purple for hover */
+}
+
+/* --- Note (Pulse) --- */
+.admonition.note {
+  background-color: #e0fafa; /* lightened Pulse for background */
+  border-left: 4px solid #33cccc; /* Pulse */
+}
+
+.admonition.note .admonition-title {
+  background-color: #b3f0f0; /* optional: title background */
+  color: #003333; /* dark teal for text contrast */
+}
+
+/* --- Warning (Spark) --- */
+.admonition.warning {
+  background-color: #fff1e6; /* lightened Spark */
+  border-left: 4px solid #f9803d; /* Spark */
+}
+
+.admonition.warning .admonition-title {
+  background-color: #ffd9c2; /* optional: title background */
+  color: #732600; /* deep orange-brown for contrast */
+}
+

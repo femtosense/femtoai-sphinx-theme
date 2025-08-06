@@ -1,0 +1,15 @@
+{%- extends "sphinx_rtd_theme/layout.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="icon" type="image/x-icon" href="{{ pathto('_static/images/logo.ico', 1) }}">
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  <div class="sidebar-logo">
+    <a href="https://femto.ai" target="_blank">
+      <img src="{{ pathto('_static/images/femtoAI_logo_white.svg', 1) }}" alt="femtoAI Logo">
+    </a>
+  </div>
+{% endblock %}

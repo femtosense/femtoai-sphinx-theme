@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Build output
+_build/
+dist/
+*.egg-info/
+*.eggs/
+*.log
+
+# Sphinx cache
+.doctrees/
+*.pickle
+
+# Theme packaging
+*.zip
+*.tar.gz
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+.venv/
+env/
+venv/
+
+# Editors/IDEs
+.vscode/
+.idea/
+
+# Node modules (if using JS/CSS bundling)
+node_modules/
+
+# Custom static artifacts
+_static/*.css.map
+_static/*.js.map
